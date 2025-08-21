@@ -1,0 +1,220 @@
+.navbar {
+    background: linear-gradient(90deg, #1d5028, #28a745);
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffdd57 !important;
+    /* amarelinho destaque */
+}
+
+/* Botões header */
+.btn-header {
+    padding: 8px 22px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.juncao_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.juncaofooter {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.juncaofooter svg {
+    width: 30px;
+    height: 30px;
+}
+
+.juncaofooter p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+/* Ícones sociais */
+.juncaofooter a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #222;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.juncaofooter a svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+}
+
+.juncaofooter a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Hover específico para cada rede */
+.juncaofooter a:nth-child(2):hover {
+    /* Instagram */
+    background: radial-gradient(circle at 30% 30%, #fdf497, #fdf497 10%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.juncaofooter a:nth-child(3):hover {
+    /* WhatsApp */
+    background-color: #25D366;
+}
+
+.juncaofooter a:nth-child(4):hover {
+    /* LinkedIn */
+    background-color: #0077B5;
+}
+
+
+footer {
+    background: linear-gradient(90deg, #1d5028, #28a745);
+    color: #fff;
+    /* texto branco */
+    font-family: Arial, sans-serif;
+}
+
+.footer-separator {
+    border: 0;
+    border-top: 1px solid black;
+    /* linha fina e clara */
+    margin: 1rem 0;
+}
+
+.footer-columns {
+    gap: 2rem;
+}
+
+.footer-column {
+    min-width: 200px;
+    flex: 1;
+}
+
+.footer-column h6 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffcc00;
+    /* cor de destaque */
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #222;
+    color: #fff;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.social-link:hover {
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+.social-link.spotify:hover {
+    background-color: green;
+}
+
+.social-link.youtube:hover {
+    background: red;
+}
+
+.social-link.instagram:hover {
+    background: radial-gradient(circle at 30% 30%, #fdf497, #fd5949, #d6249f, #285AEB);
+}
+
+.social-link.whatsapp:hover {
+    background-color: #25D366;
+}
+
+.social-link.linkedin:hover {
+    background-color: #0077B5;
+}
+
+.footer-bottom small {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+footer svg {
+    width: 35px;
+    height: 35px;
+}
