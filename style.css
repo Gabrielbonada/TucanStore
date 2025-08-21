@@ -1,220 +1,329 @@
+/* Navbar */
 .navbar {
-    background: linear-gradient(90deg, #1d5028, #28a745);
-    padding: 12px 0;
+  background: linear-gradient(90deg, #1d5028, #28a745);
+  padding: 12px 0;
 }
 
 .navbar-brand {
-    color: #fff !important;
-    letter-spacing: 1px;
+  color: #fff !important;
+  letter-spacing: 1px;
 }
 
 .nav-link {
-    color: #fff !important;
-    font-weight: 500;
-    transition: 0.3s;
+  color: #fff !important;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 .nav-link:hover {
-    color: #ffdd57 !important;
-    /* amarelinho destaque */
+  color: black !important; /* Destaque amarelo no hover */
 }
 
-/* Botões header */
+/* Botões no header */
 .btn-header {
-    padding: 8px 22px;
-    border-radius: 30px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    text-align: center;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  padding: 8px 22px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
-
-
-.juncao_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+/* Container centralizado para junção */
+.juncao_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
+/* Container para botões alinhados em linha */
+.juncao_botao {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: center;
+}
 
+/* CARD DE PRODUTO */
+/* Container principal do card */
+.product-card {
+  max-width: 320px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
 
+/* Efeito hover elevando o card */
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
 
+/* Imagem do produto */
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
+/* Informações dentro do card */
+.product-info {
+  padding: 20px;
+  text-align: center;
+}
 
+/* Título do produto */
+.product-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
 
+/* Descrição do produto */
+.product-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 16px;
+  min-height: 48px; /* Mantém altura fixa para uniformidade */
+}
 
+/* Preço do produto */
+.product-price {
+  font-size: 1.3rem;
+  color: green;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
+/* Botão de comprar */
+.btn-buy {
+  background-color: green;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
 
+/* Efeito hover no botão comprar */
+.btn-buy:hover {
+  background-color: black;
+}
 
+/* RODAPÉ - Container principal do footer */
 .juncaofooter {
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    justify-content: center;
-
-    color: white;
-    text-align: center;
-    padding: 20px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }
 
+/* Ícones SVG dentro do footer */
 .juncaofooter svg {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
+/* Parágrafos dentro do footer */
 .juncaofooter p {
-    margin-bottom: 15px;
-    font-size: 0.95rem;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
 }
 
-/* Ícones sociais */
+/* Links sociais no footer */
 .juncaofooter a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    margin: 0 10px;
-    border-radius: 50%;
-    background-color: #222;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #222;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Ícones SVG dentro dos links sociais */
 .juncaofooter a svg {
-    width: 22px;
-    height: 22px;
-    fill: white;
+  width: 22px;
+  height: 22px;
+  fill: white;
 }
 
+/* Efeito hover nos links sociais */
 .juncaofooter a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
 }
 
-/* Hover específico para cada rede */
-.juncaofooter a:nth-child(2):hover {
-    /* Instagram */
-    background: radial-gradient(circle at 30% 30%, #fdf497, #fdf497 10%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-}
-
-.juncaofooter a:nth-child(3):hover {
-    /* WhatsApp */
-    background-color: #25D366;
-}
-
-.juncaofooter a:nth-child(4):hover {
-    /* LinkedIn */
-    background-color: #0077B5;
-}
-
-
+/* Estilos gerais do footer */
 footer {
-    background: linear-gradient(90deg, #1d5028, #28a745);
-    color: #fff;
-    /* texto branco */
-    font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #1d5028, #28a745);
+  color: #fff;
+  font-family: Arial, sans-serif;
 }
 
+/* Separador do footer */
 .footer-separator {
-    border: 0;
-    border-top: 1px solid black;
-    /* linha fina e clara */
-    margin: 1rem 0;
+  border: 0;
+  border-top: 1px solid black;
+  margin: 1rem 0;
 }
 
+/* Container para colunas do footer */
 .footer-columns {
-    gap: 2rem;
+  gap: 2rem;
 }
 
+/* Cada coluna do footer */
 .footer-column {
-    min-width: 200px;
-    flex: 1;
+  min-width: 200px;
+  flex: 1;
 }
 
+/* Título das colunas */
 .footer-column h6 {
-    margin-bottom: 1rem;
-    font-weight: 600;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
+/* Lista dentro das colunas */
 .footer-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+/* Itens da lista */
 .footer-column ul li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
+/* Links dentro da lista */
 .footer-column ul li a {
-    color: #ccc;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
 }
 
+/* Efeito hover nos links do footer */
 .footer-column ul li a:hover {
-    color: #ffcc00;
-    /* cor de destaque */
-    text-decoration: underline;
+  color: black;
+  text-decoration: underline;
 }
 
+/* Container dos ícones sociais */
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
+/* Estilo geral dos links sociais */
 .social-link {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #222;
-    color: #fff;
-    font-size: 16px;
-    line-height: 35px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s, box-shadow 0.3s;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: green;
+  color: #fff;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
+/* Efeito hover geral nos links sociais */
 .social-link:hover {
-    box-shadow: 0 0 10px #ffcc00;
+  box-shadow: 0 0 10px #ffcc00;
 }
 
+/* Hover específico para Spotify */
 .social-link.spotify:hover {
-    background-color: green;
+  background-color: green;
 }
 
+/* Hover específico para YouTube */
 .social-link.youtube:hover {
-    background: red;
+  background: red;
 }
 
+/* Hover específico para Instagram */
 .social-link.instagram:hover {
-    background: radial-gradient(circle at 30% 30%, #fdf497, #fd5949, #d6249f, #285AEB);
+  background: radial-gradient(circle at 30% 30%, #fdf497, #fd5949, #d6249f, #285AEB);
 }
 
+/* Hover específico para WhatsApp */
 .social-link.whatsapp:hover {
-    background-color: #25D366;
+  background-color: #25D366;
 }
 
+/* Hover específico para LinkedIn */
 .social-link.linkedin:hover {
-    background-color: #0077B5;
+  background-color: #0077B5;
 }
 
+/* Texto pequeno no rodapé */
 .footer-bottom small {
-    display: block;
-    margin-top: 0.5rem;
-    font-size: 0.8rem;
-    color: #888;
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: white;
 }
 
+/* Ícones SVG no footer */
 footer svg {
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
+}
+
+/* ANIMAÇÃO FLOAT para a lupa no botão */
+
+/* Definição da animação */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Estilo base para o ícone da lupa */
+.icon-lupa {
+  display: inline-block; /* Necessário para aplicar transform */
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Ativa animação float no hover do botão */
+.btn-main:hover .icon-lupa {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Estilo básico do botão principal */
+.btn-main {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
 }
