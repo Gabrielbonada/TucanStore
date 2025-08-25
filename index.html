@@ -12,25 +12,35 @@
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">TucanStore</a>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                ☰
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">carrinho</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-                </ul>
-                <a class="btn btn-light ms-3"><img width="40px" height="40px" src="assets/aaa.webp" alt=""></a>
+<nav style="position: sticky; top: 0px; z-index: 1;" class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-white" href="#">TucanStore</a>
 
+    <!-- Botão do menu hambúrguer -->
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      ☰
+    </button>
 
-            </div>
-        </div>
-    </nav>
+    <!-- Itens do menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="openCart()">Carrinho(<span id="cart-count">0</span>)</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+
+        <!-- Botão de login estilizado -->
+        <li class="nav-item ms-lg-3">
+          <a href="#" class="btn btn-light d-flex align-items-center px-3 py-2">
+            <img src="assets/images-Photoroom.png" alt="Login" width="40" height="40" class=" rounded-circle" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -48,14 +58,14 @@
             <!-- Slides do carrossel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/ecommerce-home-site.png" class="d-block w-100" alt="Promoção 1" />
+                    <img src="assets/BCO.e28e5d38-b479-43d3-bc83-788c8cd55040.png" class="d-block w-100" alt="Promoção 1" />
 
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/halteres-pretos-com-pesos-diferentes.jpg" class="d-block w-100" alt="Promoção 2" />
+                    <img src="assets/BCO.4931fc34-bd69-4590-8254-61fb592f126e.png" class="d-block w-100" alt="Promoção 2" />
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/uma-visao-geral-da-alca-de-fitness-halteres-pular-corda-pesos-fone-de-ouvido-e-sapatos-no-plano-de-fundo-texturizado-de-madeira.jpg"
+                    <img src="assets/BCO.b1f320ca-a1a9-4622-b116-dd41edb5a597.png"
                         class="d-block w-100" alt="Promoção 3" />
                 </div>
             </div>
@@ -96,18 +106,20 @@
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="product-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Produto" class="product-image" />
+                    <img src="/assets/shopping.webp" alt="Produto" class="product-image" />
                     <div class="product-info">
                         <h3 class="product-title">Geladeira Eletrolux</h3>
-                        <p class="product-description"></p>
+                        <p class="product-description">Uma breve descrição atraente do produto para chamar a atenção.</p>
                         <div class="product-price">R$ 199,90</div>
-                        <button class="btn-buy">Comprar Agora</button>
+                        <button class="btn-buy" data-name="Geladeira Eletrolux" data-price="199.90">
+                            Comprar Agora
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="product-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Produto" class="product-image" />
+                    <img src="assets/shopping (1).webp" alt="Produto" class="product-image" />
                     <div class="product-info">
                         <h3 class="product-title">Celular Sansumg</h3>
                         <p class="product-description">Uma breve descrição atraente do produto para chamar a atenção.
@@ -300,7 +312,7 @@
                     <ul>
                         <li><a href="#">Meus pedidos</a></li>
                         <li><a href="#">Lista de Desejos</a></li>
-                        <li><a href="#">Carrinho</a></li>
+                        <li><a href="#" onclick="event.preventDefault(); openCart()">Carrinho</a></li>
                         <li><a href="#">Acompanhar Entrega</a></li>
                         <li><a href="#">Dados Cadastrais</a></li>
                     </ul>
@@ -331,10 +343,46 @@
             </div>
         </div>
     </footer>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="cart-toast" class="toast align-items-center text-white bg-success border-0" role="alert">
+    <div class="d-flex">
+      <div class="toast-body">
+        Produto adicionado ao carrinho!
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Modal Estilizado do Carrinho -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title fw-bold" id="cartModalLabel">🛒 Seu Carrinho</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <ul id="cart-items" class="list-group list-group-flush"></ul>
+                    <div class="text-end mt-4">
+                        <h5 class="fw-bold">Total: R$ <span id="cart-total">0.00</span></h5>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">🡸 Continuar
+                        Comprando</button>
+                    <button type="button" class="btn btn-success">✅ Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
