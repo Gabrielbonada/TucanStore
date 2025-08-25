@@ -1,4 +1,4 @@
-Amanzon
+TucanStore
 E-commerce
 
 Escopo do Projeto
@@ -26,7 +26,7 @@ Além disso, o projeto possibilita aplicar tecnologias modernas em um contexto r
 ---
 
 Tecnologias Envolvidas
-- **Front-end:** HTML5, CSS3, JavaScript (React ou Bootstrap podem ser adicionados)
+- **Front-end:** HTML5, CSS3, JavaScript (Bootstrap)
 - **Versionamento:** Git + GitHub
 
 ---
@@ -38,7 +38,6 @@ Protótipo inicial criado para planejar as telas principais do sistema:
 - Página de detalhes do produto
 - Carrinho de compras
 - Login/Registro
-- Checkout
 
 📎 [Link do Protótipo no Figma](#)  
 *(ou adicionar imagem abaixo quando tiver exportado)*  
