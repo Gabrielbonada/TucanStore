@@ -1,0 +1,60 @@
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #1d5028, #28a745);
+  padding: 12px 0;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: black !important; /* Destaque amarelo no hover */
+}
+
+/* Botões no header */
+.btn-header {
+  padding: 8px 22px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Container centralizado para junção */
+.juncao_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Container para botões alinhados em linha */
+.juncao_botao {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: center;
+}
+    .about-hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x600/?store,shopping') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .team img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
