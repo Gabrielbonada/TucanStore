@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce Integrado</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="produtos.css">
 </head>
-
 <body>
-
-    <nav style="position: sticky; top: 0px; z-index: 1;" class="navbar navbar-expand-lg">
+   <nav style="position: sticky; top: 0px; z-index: 1;" class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand fw-bold text-white" href="#">TucanStore</a>
 
@@ -41,205 +37,30 @@
             </div>
         </div>
     </nav>
-
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-
-        <!-- ========== CARROSSEL DE IMAGENS ========== -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-
-            <!-- Slides do carrossel -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/BCO.e28e5d38-b479-43d3-bc83-788c8cd55040.png" class="d-block w-100"
-                        alt="Promoção 1" />
-
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/BCO.4931fc34-bd69-4590-8254-61fb592f126e.png" class="d-block w-100"
-                        alt="Promoção 2" />
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/BCO.b1f320ca-a1a9-4622-b116-dd41edb5a597.png" class="d-block w-100"
-                        alt="Promoção 3" />
-                </div>
-            </div>
-
-            <!-- Controles anterior/próximo -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
-        </div>
-    </div>
-
-
-
- <section class="container my-5">
-    <div class="row g-4">
-
-        <!-- Produto 1 -->
-        <div class="col-md-4">
-            <div class="product-card">
-                <img src="/assets/Geladeira.png" alt="Produto" class="product-image" />
-                <div class="product-info">
-                    <h3 class="product-title">Geladeira Electrolux Side by Side Inox</h3>
-                    <p class="product-description">Design moderno em aço inox, com dispenser externo de água e gelo, ideal para quem busca praticidade e sofisticação na cozinha.
-                        Espaçosa, eficiente e com controle digital de temperatura — perfeita para manter seus alimentos sempre frescos.
-                    </p>
-                    <div class="product-price">R$ 5.869,00</div>
-                    <button class="btn-buy" 
-                        data-name="Geladeira Electrolux" 
-                        data-price="5869.00" 
-                        data-image="/assets/Geladeira.png">
-                        Comprar Agora
-                    </button>
+        <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="juncao_container">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1>Pesquise aqui nossos melhores produtos</h1>
+                    <div class="d-flex flex-column flex-sm-row gap-2 mt-3">
+                        <input type="text" class="form-control" placeholder="O que você quer na sua vida?">
+                        <button type="submit" class="btn-main">
+                            <span class="icon-lupa">🔍 </span> Buscar
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Produto 2 -->
-        <div class="col-md-4">
-            <div class="product-card">
-                <img src="assets/celular.png" alt="Produto" class="product-image" />
-                <div class="product-info">
-                    <h3 class="product-title">Samsung S25 Ultra</h3>
-                    <p class="product-description">O smartphone mais avançado da linha Galaxy, com design elegante, tela infinita e câmera quádrupla de altíssima resolução.
-                        Acompanha caneta S Pen para máxima produtividade e criatividade.
-                        Ideal para quem busca desempenho, estilo e tecnologia de ponta.
-                    </p>
-                    <div class="product-price">R$ 8.499,00</div>
-                    <button class="btn-buy" 
-                        data-name="Samsung S25 Ultra" 
-                        data-price="8499.00" 
-                        data-image="assets/celular.png">
-                        Comprar Agora
-                    </button>
-                </div>
-            </div>
-        </div>
 
-        <!-- Produto 3 -->
-        <div class="col-md-4">
-            <div class="product-card">
-                <img src="assets/JBLfone.png" alt="Produto" class="product-image" />
-                <div class="product-info">
-                    <h3 class="product-title">Fone JBL Over-Ear Bluetooth</h3>
-                    <p class="product-description">Conforto e potência sonora em um só produto.
-                        Com almofadas macias, conexão sem fio e controles integrados, o fone JBL oferece uma experiência imersiva para música, chamadas ou jogos.
-                        Ideal para quem busca qualidade de áudio com liberdade de movimento.
-                    </p>
-                    <div class="product-price">R$ 399,00</div>
-                    <button class="btn-buy" 
-                        data-name="Fone JBL Over-Ear Bluetooth" 
-                        data-price="399.00" 
-                        data-image="assets/JBLfone.png">
-                        Comprar Agora
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Produto 4 -->
-        <div class="col-md-4">
-            <div class="product-card">
-                <img src="assets/Câmera.png" alt="Produto" class="product-image" />
-                <div class="product-info">
-                    <h3 class="product-title">Câmera Profissional Nikon D750</h3>
-                    <p class="product-description">Capture momentos com qualidade excepcional usando a Nikon D750.
-                        Com sensor full-frame, lente NIKKOR e controles manuais precisos, essa DSLR é perfeita para fotógrafos
-                        que buscam desempenho profissional e versatilidade em qualquer cenário.
-                    </p>
-                    <div class="product-price">R$ 5.990,00</div>
-                    <button class="btn-buy" 
-                        data-name="Câmera Profissional Nikon D750" 
-                        data-price="5990.00" 
-                        data-image="assets/Câmera.png">
-                        Comprar Agora
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Produto 5 -->
-        <div class="col-md-4">
-            <div class="product-card">
-                <img src="assets/Ps5.png" alt="Produto" class="product-image" />
-                <div class="product-info">
-                    <h3 class="product-title">PlayStation 5 + Controle DualSense</h3>
-                    <p class="product-description">A nova geração dos games chegou! Com design futurista, desempenho ultra-rápido e gráficos impressionantes,
-                        o PS5 oferece uma experiência imersiva como nenhuma outra.
-                        Acompanha o controle DualSense com resposta tátil e gatilhos adaptáveis — perfeito para quem leva o jogo a sério.
-                    </p>
-                    <div class="product-price">R$ 6.759,00</div>
-                    <button class="btn-buy" 
-                        data-name="PlayStation 5 + Controle DualSense" 
-                        data-price="6759.00" 
-                        data-image="assets/Ps5.png">
-                        Comprar Agora
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Produto 6 -->
-        <div class="col-md-4">
-            <div class="product-card">
-                <img src="assets/SmartTv.png" alt="Produto" class="product-image" />
-                <div class="product-info">
-                    <h3 class="product-title">Smart TV AOC Roku 32</h3>
-                    <p class="product-description">Entretenimento completo na palma da sua mão! Com sistema Roku integrado, essa Smart TV oferece acesso rápido a apps como
-                        Netflix, Disney+, Globoplay e muito mais.
-                        Interface intuitiva, imagem nítida e tamanho ideal para qualquer ambiente — perfeita para transformar sua casa em um verdadeiro centro de diversão.
-                    </p>
-                    <div class="product-price">R$ 2.400,00</div>
-                    <button class="btn-buy" 
-                        data-name="Smart TV AOC Roku 32" 
-                        data-price="2400.00" 
-                        data-image="assets/SmartTv.png">
-                        Comprar Agora
-                    </button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- Modal do Carrinho -->
-<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="cartModalLabel">🛒 Seu Carrinho</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-      </div>
-      <div class="modal-body" id="cart-body">
-        <!-- Conteúdo dinâmico -->
-      </div>
-      <div class="modal-footer" id="cart-footer">
-        <!-- Conteúdo dinâmico -->
-      </div>
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Nossos Produtos</h1>
+    <div class="row" id="products-container">
+      <!-- Cards serão inseridos aqui pelo JS -->
     </div>
   </div>
-</div>
-
-<!-- Bootstrap JS Bundle (com Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- ========== RODAPÉ ========== -->
     <footer class="bg-dark text-white mt-5 pt-4 pb-3">
@@ -403,57 +224,7 @@
             </div>
         </div>
     </footer>
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div id="cart-toast" class="toast align-items-center text-white bg-success border-0" role="alert">
-            <div class="d-flex">
-                <div class="toast-body">
-                    Produto adicionado ao carrinho!
-                </div>
-                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
-            </div>
-        </div>
-    </div>
 
-
-
-    <!-- Modal Estilizado do Carrinho -->
-    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-success text-white">
-                    <h5 class="modal-title fw-bold" id="cartModalLabel">🛒 Seu Carrinho</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Fechar"></button>
-                </div>
-
-                <!-- Corpo do modal -->
-                <div class="modal-body p-4" id="cart-body">
-                    <ul id="cart-items" class="list-group list-group-flush"></ul>
-                    <div class="text-end mt-4">
-                        <h5 class="fw-bold">Total: R$ <span id="cart-total">0.00</span></h5>
-                    </div>
-                </div>
-
-                <!-- Rodapé inicial -->
-                <div class="modal-footer d-flex justify-content-between" id="cart-footer">
-                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">🡸 Continuar
-                        Comprando</button>
-                    <button type="button" class="btn btn-success" id="btn-checkout">✅ Finalizar Compra</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-   <!-- Biblioteca do QRCode -->
-<script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
-
-<!-- Seu script -->
-<script src="script.js"></script>
-
-<!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="produtos.js"></script>
 </body>
-
 </html>

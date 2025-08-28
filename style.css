@@ -48,8 +48,10 @@
 
 /* CARD DE PRODUTO */
 /* Container principal do card */
+/* Container principal do card */
 .product-card {
-  max-width: 320px;
+  max-width: 350px; /* Limita a largura do card */
+  margin: 0 auto; /* Centraliza dentro da coluna ou container */
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -66,9 +68,11 @@
 
 /* Imagem do produto */
 .product-image {
-  width: 100%;
-  height: 200px;
+  max-width: 100%; /* Garante que a imagem fique dentro do card */
+  height: 300px;
   object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Informações dentro do card */
