@@ -19,9 +19,13 @@ Design de interface e experiência do usuário
 Além disso, o projeto possibilita aplicar tecnologias modernas em um contexto real e de grande impacto.
 
 Tecnologias Envolvidas
+<ul>
+  <li></li>
+  <li>Front-end: HTML5, CSS3, JavaScript (Bootstrap)</li>
+  <li> Versionamento: Git + GitHub </li>
+</ul>
 
-Front-end: HTML5, CSS3, JavaScript (Bootstrap)
-Versionamento: Git + GitHub
+
 Protótipo (Wireframe) Protótipo inicial criado para planejar as telas principais do sistema:
 
 Página inicial (listagem de produtos)
@@ -38,3 +42,8 @@ README com escopo, justificativa e tecnologias
 Protótipo adicionado
 
 Autor Projeto desenvolvido por Benjamin Corte e Gabriel Bonada.
+
+
+Casos de testes: 
+
+
