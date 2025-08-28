@@ -1,4 +1,4 @@
-TucanStore E-commerce
+ TucanStore E-commerce
 
 Escopo do Projeto Este projeto consiste no desenvolvimento de uma plataforma de e-commerce inspirada em grandes marketplaces como a Amazon.
 O sistema permitirá que usuários possam:
@@ -11,7 +11,7 @@ Acompanhar seus pedidos
 Justificativa do Projeto O comércio eletrônico é uma das áreas que mais cresce no mundo e representa uma habilidade essencial para desenvolvedores que buscam criar soluções escaláveis e completas.
 A construção deste e-commerce servirá como prática para consolidar conhecimentos em:
 
-Desenvolvimento Front-end e Back-end
+<h1>Desenvolvimento Front-end e Back-end</h1> 
 Arquitetura de sistemas
 Controle de versão com Git e GitHub
 integração com APIS
