@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhe Conosco - TucanStore</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: url('https://source.unsplash.com/1600x500/?office,teamwork') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+    .benefit-icon {
+      font-size: 2.5rem;
+      color: #198754;
+      margin-bottom: 10px;
+    }
+    .form-section {
+      background: #f8f9fa;
+      padding: 50px 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">TucanStore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link active" href="trabalhe.html">Trabalhe Conosco</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h1>Faça parte da nossa equipe</h1>
+      <p class="lead">Na TucanStore você cresce junto com a gente 🚀</p>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <div class="container my-5">
+    <h2 class="fw-bold text-center mb-4">Por que trabalhar conosco?</h2>
+    <div class="row g-4">
+      <div class="col-md-4 text-center">
+        <div class="p-4 border rounded h-100 shadow-sm">
+          <div class="benefit-icon">💼</div>
+          <h5>Crescimento Profissional</h5>
+          <p>Planos de carreira e treinamentos constantes para você evoluir sempre.</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="p-4 border rounded h-100 shadow-sm">
+          <div class="benefit-icon">🤝</div>
+          <h5>Ambiente Colaborativo</h5>
+          <p>Uma equipe unida e respeitosa, que valoriza suas ideias.</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="p-4 border rounded h-100 shadow-sm">
+          <div class="benefit-icon">🎯</div>
+          <h5>Propósito Claro</h5>
+          <p>Trabalhe em um time que transforma a experiência de compras online.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulário -->
+  <div class="container my-5">
+    <div class="form-section">
+      <h2 class="fw-bold text-center mb-4">Envie seu currículo</h2>
+      <form>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="nome" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="seuemail@email.com" required>
+          </div>
+          <div class="col-md-6">
+            <label for="vaga" class="form-label">Vaga</label>
+            <select id="vaga" class="form-select" required>
+              <option selected disabled>Selecione a vaga...</option>
+              <option>Atendente de Suporte</option>
+              <option>Analista de Marketing Digital</option>
+              <option>Desenvolvedor Front-End</option>
+              <option>Outras</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="curriculo" class="form-label">Currículo (PDF)</label>
+            <input type="file" class="form-control" id="curriculo" accept=".pdf" required>
+          </div>
+          <div class="col-12">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea id="mensagem" class="form-control" rows="4" placeholder="Fale um pouco sobre você..." required></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-success w-100">Enviar Candidatura</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">© 2025 TucanStore - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
