@@ -16,7 +16,7 @@
   <!-- Navbar -->
   <nav style="position: sticky; top: 0px; z-index: 1;" class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand fw-bold text-white" href="#">TucanStore</a>
+      <a class="navbar-brand fw-bold text-white" href="index.html">TucanStore</a>
 
       <!-- Botão do menu hambúrguer -->
       <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -26,11 +26,11 @@
       <!-- Itens do menu -->
       <div class="collapse navbar-collapse justify-content-end" id="menu">
         <ul class="navbar-nav align-items-center">
-          <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
           <li class="nav-item">
             <a class="nav-link" href="#" onclick="openCart()">Carrinho(<span id="cart-count">0</span>)</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contato.html">Contato</a></li>
 
           <!-- Botão de login estilizado -->
           <li class="nav-item ms-lg-3">
@@ -107,7 +107,7 @@
     <div class="col-12 col-md-6">
       <div class="d-flex mb-3">
       </div>
-      <div id="map"></div>
+      <div style="z-index: -1;" id="map"></div>
     </div>
   </div>
 </div>
@@ -118,8 +118,8 @@
   <footer class="bg-dark text-white mt-5 pt-4 pb-3">
     <div class="container">
       <div class="footer-top text-center mb-3">
-        <img style="width: 150px; height: 150px;" src="/assets/logo-white.svg" alt="">
-        <h5 style="margin-bottom: 30px ;">Siga a Tucan </h5>
+        <img style="width: 150px; height: 150px;" src="/assets/Logo.png" alt="">
+        <h5 style="margin-bottom: 30px ; margin-top: 10px;">Siga a Tucan </h5>
         <div class="social-icons my-2">
           <!-- Use seus SVGs ou ícones aqui -->
           <a href="" class="social-link youtube"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
@@ -234,10 +234,10 @@
         <div class="footer-column">
           <h6>Institucional</h6>
           <ul>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Central de Ajuda</a></li>
-            <li><a href="#">Fale Conosco</a></li>
-            <li><a href="#">Trabalhe conosco</a></li>
+            <li><a href="Nossahistoria.html">Sobre Nós</a></li>
+            <li><a href="centraldeajuda.html">Central de Ajuda</a></li>
+            <li><a href="Contato.html">Fale Conosco</a></li>
+            <li><a href="trabalhecomnos.html">Trabalhe conosco</a></li>
           </ul>
         </div>
 
@@ -277,9 +277,27 @@
       </div>
     </div>
   </footer>
+  <!-- Modal do Carrinho -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">🛒 Seu Carrinho</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body" id="cart-body">
+        <!-- Conteúdo dinâmico -->
+      </div>
+      <div class="modal-footer" id="cart-footer">
+        <!-- Conteúdo dinâmico -->
+      </div>
+    </div>
+  </div>
+</div>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="carrinho.js"></script>
   <script src="contato.js"></script>
 
 </body>

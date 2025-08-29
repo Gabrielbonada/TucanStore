@@ -29,3 +29,4 @@ fetch('https://dummyjson.com/products')
     console.error('Erro ao carregar produtos:', err);
     productsContainer.innerHTML = '<p class="text-center text-danger">Erro ao carregar produtos.</p>';
   });
+  

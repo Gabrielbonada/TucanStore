@@ -88,3 +88,4 @@ const lon = -46.6333;
 L.marker([lat, lon]).addTo(map)
   .bindPopup("<b>TucanStore</b><br>Estamos aqui!")
   .openPopup();
+  
