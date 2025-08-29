@@ -49,8 +49,7 @@ Casos de testes:
 | **ID** | **Funcionalidade**        | **Descrição do Teste**                                   | **Entrada Esperada**                     | **Resultado Esperado**                                                 | **Status** |
 | ------ | ------------------------- | -------------------------------------------------------- | ---------------------------------------- | ---------------------------------------------------------------------- | -------- |
 | TC01   | Formulario de Contato     | Validação por Email                                      | Digitar @ no email para validar          | Caso não tenha o @ no campo do email, o formulario não vai ser enviado | ✅ 
-
-| TC02   | Barra de Busca            | Buscar por um termo inexistente                          | Digitar "asdasd123" e clicar em "Buscar" | Exibir mensagem "Nenhum resultado encontrado" ou página vazia          | ✅      |
+| TC02   | Abrir Modal               | Quando o carrinho for cliado abre um modal               | Modal tem que abrir de maneira rapida e estilizada | Aparecer os itens no modal com imagens e valores             | ✅      |
 | TC03   | Lista de Filmes Populares | Acessar a página inicial e visualizar filmes populares   | Acessar o site                           | A lista de filmes populares é exibida automaticamente                  | ✅      |
 | TC04   | Detalhes do Filme         | Clicar em um filme da lista para ver detalhes            | Clicar em um item da lista               | Detalhes como título, sinopse, imagem e nota devem aparecer            | ✅          |
 | TC05   | Navegação                 | Clicar nos botões de navegação (Início, Filmes, Séries)  | Clicar em cada botão                     | Página correspondente é carregada                                      | ✅          |
