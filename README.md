@@ -57,9 +57,4 @@ Casos de testes:
 | TC07   | Acompanhar entrega     | Através de um codigo, mostrar aonde está a entrega do usuario| Codigo recebido pelo usuario          | Usuario saber informações da sua entrega |   ✅       |
 | TC08   | Modal de Login            | Abrir o modal de login ao clicar em "Login"              | Clicar no botão "Login"                  | Modal aparece com campos de usuário e senha                            | ✅          |
 | TC09   | Login com campos vazios   | Tentar logar com campos de login vazios                  | Clicar em "Entrar" sem preencher nada    | Exibir erro ou bloqueio do envio (validação)                           | ⚠️         |
-| TC10   | Fechar Modal              | Clicar em "Fechar" dentro do modal de login              | Clicar no botão "Fechar"                 | Modal é fechado                                                        | ✅          |
-| TC11   | Responsividade            | Acessar o site por celular/tablet                        | Reduzir o tamanho da janela              | Site deve se ajustar corretamente à tela (menu, layout, textos)        | ⚠️         |
-| TC12   | API TMDb                  | Verificar se a API está carregando os dados corretamente | Aguardar o carregamento                  | Dados reais de filmes/séries devem aparecer                            | ✅          |
-| TC13   | Estilo dos botões         | Passar o mouse sobre os botões da navegação              | Hover sobre os botões                    | Botões mudam de cor (hover laranja) e fazem leve zoom                  | ✅          |
-| TC14   | Erro na API               | Desconectar da internet e acessar a aplicação            | Sem conexão                              | Exibir mensagem de erro ou falha no carregamento dos dados             | ⚠️         |
-
+| TC10   | Fechar Modal              | Clicar em "Fechar" dentro do modal de login              | Clicar no botão "Fechar"                 | Modal é fechado                                                        | ✅      
