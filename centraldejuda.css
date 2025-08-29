@@ -63,3 +63,54 @@
 .input-group button {
   border-left: 0;
 }
+/* Estilização de item do carrinho */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart-item-img {
+  width: 60px;
+  height: 60px;
+  background-color: #eee;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.cart-item-price {
+  font-size: 0.95rem;
+  color: #28a745;
+}
+
+.cart-remove-btn {
+  background-color: transparent;
+  border: none;
+  color: #dc3545;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.cart-remove-btn:hover {
+  color: #a30000;
+  text-decoration: underline;
+}
