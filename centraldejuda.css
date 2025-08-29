@@ -1,0 +1,65 @@
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #1d5028, #28a745);
+  padding: 12px 0;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: black !important; /* Destaque amarelo no hover */
+}
+
+/* Botões no header */
+.btn-header {
+  padding: 8px 22px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Container centralizado para junção */
+.juncao_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Container para botões alinhados em linha */
+.juncao_botao {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: center;
+}
+.accordion-button {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.accordion-button:hover {
+  background-color: #e6f4ea;
+}
+.accordion-item {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #19875433; /* leve borda verde */
+}
+.input-group input {
+  border-right: 0;
+}
+.input-group button {
+  border-left: 0;
+}
