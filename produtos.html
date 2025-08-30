@@ -40,35 +40,41 @@
         </div>
     </nav>
     <!-- Hero -->
-    <section class="hero">
-        <div class="container">
-            <div class="juncao_container">
-                <div class="col-lg-7 text-center text-lg-start">
-                    <h1>Pesquise aqui nossos melhores produtos</h1>
-                    <div class="d-flex flex-column flex-sm-row gap-2 mt-3">
-                        <input type="text" class="form-control" placeholder="O que você quer na sua vida?">
-                        <button type="submit" class="btn-main">
-                            <span class="icon-lupa">🔍 </span> Buscar
-                        </button>
+    <div class="pesquisa">
+        <section class="hero">
+            <div class="container">
+                <div class="juncao_container">
+                    <div class="col-lg-13 text-center text-lg-start">
+                        <h1>Pesquise aqui nossos melhores produtos</h1>
+                        <div class="d-flex flex-column flex-sm-row gap-2 mt-3">
+                            <input type="text" class="form-control" placeholder="O que você quer na sua vida?">
+                            <button type="submit" class="btn-main">
+                                <span class="icon-lupa">🔍 </span> Buscar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
 
 
-    <div class="container my-5">
-        <div class="row" id="products-container">
-            <!-- Cards serão inseridos aqui pelo JS -->
+    <div class="cards">
+        <div class="container my-5 ">
+            <div class="row justify-content-center g-4" id="products-container">
+                <!-- Cards serão inseridos aqui pelo JS -->
+            </div>
         </div>
     </div>
 
-    <!-- ========== RODAPÉ ========== -->
+
+
+   <!-- ========== RODAPÉ ========== -->
     <footer class="bg-dark text-white mt-5 pt-4 pb-3">
         <div class="container">
             <div class="footer-top text-center mb-3">
-                <img style="width: 150px; height: 150px;" src="/assets/Logo.png" alt="">
+                <img style="width: 150px; height: 150px;" src="/TucanStore/assets/Logo.png" alt="">
                 <h5 style="margin-bottom: 30px ; margin-top: 10px;">Siga a Tucan </h5>
                 <div class="social-icons my-2">
                     <!-- Use seus SVGs ou ícones aqui -->
@@ -243,8 +249,9 @@
             </div>
         </div>
     </div>
-    <script src="carrinho.js"></script>
     <script src="produtos.js"></script>
+    <script src="carrinho.js"></script>
+
 
 </body>
 
