@@ -201,4 +201,81 @@ document.addEventListener("change", (e) => {
 document.addEventListener("DOMContentLoaded", () => {
     updateCartDisplay();
 });
+// ========================
+// LISTA DE DESEJOS
+// ========================
+
+// Array que vai guardar os produtos da lista
+const wishlist = [];
+
+// Função para renderizar o modal da lista de desejos
+function renderWishlist() {
+    const body = document.getElementById("wishlist-body");
+    body.innerHTML = ""; // limpa o modal
+
+    wishlist.forEach((item, index) => {
+        const div = document.createElement("div");
+        div.classList.add("wishlist-item");
+        div.innerHTML = `
+            <div class="wishlist-item-info">
+                <img src="${item.image}" alt="${item.name}" class="wishlist-item-img" />
+                <div class="wishlist-item-details">
+                    <div class="wishlist-item-title">${item.name}</div>
+                    <div class="wishlist-item-price">R$ ${parseFloat(item.price).toFixed(2)}</div>
+                </div>
+            </div>
+            <button class="wishlist-remove-btn" data-index="${index}">Remover</button>
+        `;
+        body.appendChild(div);
+    });
+
+    // Adiciona evento para remover itens
+    document.querySelectorAll(".wishlist-remove-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const index = parseInt(btn.dataset.index);
+            wishlist.splice(index, 1); // remove item do array
+            renderWishlist(); // atualiza modal
+        });
+    });
+}
+
+// ========================
+// ABRIR MODAL PELO FOOTER
+// ========================
+
+// Inicializa o modal do Bootstrap
+const wishlistModal = new bootstrap.Modal(document.getElementById('wishlistModal'));
+
+// Seleciona o link do footer
+const openWishlistLink = document.getElementById('openWishlist');
+
+openWishlistLink.addEventListener('click', (e) => {
+    e.preventDefault(); // impede o comportamento padrão do link
+    renderWishlist();   // atualiza o conteúdo do modal
+    wishlistModal.show(); // abre o modal
+});
+
+// ========================
+// ADICIONAR ITENS AO CLICAR NO CARD
+// ========================
+
+document.querySelectorAll(".btn-wishlist").forEach(link => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault(); // impede o scroll para o topo
+        const product = {
+            name: link.dataset.name,
+            price: link.dataset.price,
+            image: link.dataset.image
+        };
+
+        // Evita duplicados
+        if (!wishlist.find(item => item.name === product.name)) {
+            wishlist.push(product);
+            alert(`${product.name} adicionado à lista de desejos!`);
+        } else {
+            alert(`${product.name} já está na sua lista de desejos.`);
+        }
+    });
+});
+
 
