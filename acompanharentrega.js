@@ -25,9 +25,9 @@
 
     // Função para simular a requisição da API
     async function fetchFakeTracking(code) {
-      await new Promise(resolve => setTimeout(resolve, 500)); // simula tempo de carregamento
+      await new Promise(resolve => setTimeout(resolve, 500)); // CARREGAMENTO
       if (fakeAPI[code]) return fakeAPI[code];
-      throw new Error("Código de rastreio não encontrado.");
+      throw new Error("Código de rastreio não encontrado."); // mensagem de erro 
     }
 
     // Função para buscar rastreio

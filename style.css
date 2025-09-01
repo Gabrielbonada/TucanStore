@@ -492,3 +492,14 @@ footer svg {
   color: #a30000;
   text-decoration: underline;
 }
+.navbar-collapse {
+  transition: all 0.5s ease-in-out;
+}
+.carousel-item {
+  transition: transform 1.2s ease-in-out, opacity 1.2s ease-in-out;
+}
+.btn-buy:active,
+.btn-wishlist:active {
+  transform: scale(0.97);
+  opacity: 0.9;
+}

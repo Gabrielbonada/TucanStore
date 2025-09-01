@@ -298,3 +298,84 @@
   color: #a30000;
   text-decoration: underline;
 }
+/* HERO SECTION */
+.hero {
+  background-color: #008000; /* Verde vibrante */
+  color: white;
+  padding: 80px 20px 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom-left-radius: 50% 8%;
+  border-bottom-right-radius: 50% 8%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero p.lead {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+
+/* BENEFÍCIOS */
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #00c853;
+}
+
+.border.rounded.shadow-sm {
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.border.rounded.shadow-sm:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* FORMULÁRIO */
+.form-section {
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.form-control,
+.form-select,
+textarea {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
+  border-color: #00c853;
+  box-shadow: 0 0 0 0.25rem rgba(0, 200, 83, 0.25);
+}
+
+.btn-success {
+ background-color: #008000; /* Verde vibrante */
+  border-color: #00c853;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.btn-success:hover {
+  background-color: #009e0f;
+  border-color: #009e0f;
+}
