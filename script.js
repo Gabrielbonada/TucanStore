@@ -163,13 +163,40 @@ document.addEventListener("change", (e) => {
         document.getElementById("qrcode-img").src = "";
         cardContainer.innerHTML = "";
 
-        if (e.target.value === "pix") {
-            pixContainer.style.display = "block";
-            const qrcodeImg = document.getElementById("qrcode-img");
-            const valor = document.getElementById("cart-total").textContent.replace(",", ".");
-            const pixPayload = `PIX Gabriel R$${valor}`;
-            qrcodeImg.src = `https://chart.googleapis.com/chart?cht=qr&chs=180x180&chl=${encodeURIComponent(pixPayload)}`;
-        }
+       if (e.target.value === "pix") {
+    pixContainer.style.display = "block";
+    const qrcodeImg = document.getElementById("qrcode-img");
+    const valor = document.getElementById("cart-total").textContent.replace(",", ".");
+    
+if (e.target.value === "pix") {
+    pixContainer.style.display = "block";
+    const qrcodeImg = document.getElementById("qrcode-img");
+    const valor = document.getElementById("cart-total").textContent.replace(",", ".");
+    
+    // Texto qualquer para gerar QR Code (payload PIX, por exemplo)
+    const pixPayload = `PIX Gabriel R$${valor}`;
+
+    // URL da API para gerar QR Code da string pixPayload
+    const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(pixPayload)}`;
+
+    // Exibe o QR Code gerado pela API externa
+    qrcodeImg.src = qrCodeUrl;
+    qrcodeImg.alt = "QR Code PIX";
+
+    // Remove o "copia e cola" antigo se existir
+    const existingCopy = document.getElementById("pix-copy-code");
+    if (existingCopy) existingCopy.remove();
+
+    // Adiciona o "copia e cola" com o texto do payload
+    const copyPaste = document.createElement("p");
+    copyPaste.className = "mt-2 text-muted small";
+    copyPaste.id = "pix-copy-code";
+    copyPaste.innerHTML = `<strong>Copia e Cola:</strong> <br><code>${pixPayload}</code>`;
+    pixContainer.appendChild(copyPaste);
+}
+
+}
+
 
         if (e.target.value === "credito") {
             cardContainer.innerHTML = `
