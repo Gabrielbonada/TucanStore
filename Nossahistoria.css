@@ -316,3 +316,28 @@ footer svg {
   color: #a30000;
   text-decoration: underline;
 }
+.valores-card {
+  background-color: #2e7d32; /* verde base */
+  color: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  position: relative;
+}
+
+/* Efeito no hover */
+.valores-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  background: linear-gradient(135deg, #2e7d32, #43a047); /* degrade verde */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Efeito no título */
+.valores-card:hover h4 {
+  color: #ffeb3b; /* amarelo destaque */
+  transition: color 0.3s ease;
+}
+
