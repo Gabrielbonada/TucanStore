@@ -38,6 +38,7 @@
                                 class=" rounded-circle" />
                         </a>
                     </li>
+                    
                 </ul>
             </div>
         </div>
@@ -184,6 +185,7 @@
                         <button class="btn-wishlist" data-name="Câmera Profissional Nikon D750" data-price="5990.00"
                             data-image="/assets/Câmera.png">
                             ❤️ Adicionar à Lista
+                            
                         </button>
                     </div>
                 </div>
@@ -240,6 +242,10 @@
             </div>
 
         </div>
+                <button onclick="toggleTheme()" class="theme-toggle-btn" title="Trocar Tema">
+    🌓
+</button>
+
     </section>
 
     <!-- Modal do Carrinho -->
@@ -276,6 +282,7 @@
             </div>
         </div>
     </div>
+    
 
 
     <!-- Bootstrap JS Bundle (com Popper) -->
@@ -498,6 +505,12 @@
 <script>
   AOS.init();
 </script>
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark-theme");
+  }
+</script>
+
 </body>
 
 </html>
