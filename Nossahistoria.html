@@ -65,7 +65,7 @@
           com praticidade, rapidez e confiança. Nosso objetivo é transformar a experiência de compra
           dos nossos clientes, sempre priorizando qualidade, entrega ágil e um atendimento diferenciado.
         </p>
-        <p class="fs-5 text-muted">
+        <p class="texto fs-5 text-muted">
           Trabalhamos com dedicação para trazer produtos que realmente façam a diferença no dia a dia.
           E o mais importante: queremos que cada cliente sinta segurança e satisfação em comprar conosco.
         </p>
@@ -140,6 +140,9 @@
       </div>
     </div>
   </div>
+                  <button onclick="toggleTheme()" class="theme-toggle-btn" title="Trocar Tema">
+    🌓
+</button>
 
   <!-- ========== RODAPÉ ========== -->
   <footer class="bg-dark text-white mt-5 pt-4 pb-3" data-aos="fade-in " data-aos-duration="30">
@@ -329,6 +332,11 @@
     });
   </script>
   <script src="carrinho.js"></script>
+  <script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark-theme");
+  }
+</script>
 
 
 </body>

@@ -351,3 +351,69 @@
   color: #a30000;
   text-decoration: underline;
 }
+.theme-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #19692c;
+  transform: scale(1.05);
+}
+.dark-theme {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-theme .navbar {
+  background: linear-gradient(90deg, #000, #333);
+}
+
+.dark-theme .product-card {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+.dark-theme .product-title {
+  color: #fff;
+}
+
+.dark-theme .nav-link {
+  color: #ddd !important;
+}
+
+.dark-theme .product-description{
+  color: white;
+}
+body,
+.navbar,
+.nav-link,
+.product-card,
+.product-title,
+.product-description,
+footer,
+.footer-column,
+.footer-column ul li a {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.dark-theme p {
+  color: black !important;
+}
+.dark-theme label {
+  color: black !important;
+}
+.dark-theme h5 {
+  color: black !important;
+}

@@ -552,6 +552,17 @@ footer svg {
 .dark-theme .product-description{
   color: white;
 }
+body,
+.navbar,
+.nav-link,
+.product-card,
+.product-title,
+.product-description,
+footer,
+.footer-column,
+.footer-column ul li a {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
 
 @keyframes pulse {
   0% {
