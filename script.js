@@ -34,9 +34,9 @@ function updateCartDisplay() {
     });
 
     cartTotal.textContent = total.toLocaleString("pt-BR", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2
-});
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    });
     cartCount.textContent = cart.length;
 }
 
@@ -54,7 +54,7 @@ function removeFromCart(index) {
 
 // Abre o modal do carrinho
 function openCart() {
-    showCart(); 
+    showCart();
     const modal = new bootstrap.Modal(document.getElementById('cartModal'));
     modal.show();
 }
@@ -163,39 +163,39 @@ document.addEventListener("change", (e) => {
         document.getElementById("qrcode-img").src = "";
         cardContainer.innerHTML = "";
 
-       if (e.target.value === "pix") {
-    pixContainer.style.display = "block";
-    const qrcodeImg = document.getElementById("qrcode-img");
-    const valor = document.getElementById("cart-total").textContent.replace(",", ".");
-    
-if (e.target.value === "pix") {
-    pixContainer.style.display = "block";
-    const qrcodeImg = document.getElementById("qrcode-img");
-    const valor = document.getElementById("cart-total").textContent.replace(",", ".");
-    
-    // Texto qualquer para gerar QR Code (payload PIX, por exemplo)
-    const pixPayload = `PIX Gabriel R$${valor}`;
+        if (e.target.value === "pix") {
+            pixContainer.style.display = "block";
+            const qrcodeImg = document.getElementById("qrcode-img");
+            const valor = document.getElementById("cart-total").textContent.replace(",", ".");
 
-    // URL da API para gerar QR Code da string pixPayload
-    const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(pixPayload)}`;
+            if (e.target.value === "pix") {
+                pixContainer.style.display = "block";
+                const qrcodeImg = document.getElementById("qrcode-img");
+                const valor = document.getElementById("cart-total").textContent.replace(",", ".");
 
-    // Exibe o QR Code gerado pela API externa
-    qrcodeImg.src = qrCodeUrl;
-    qrcodeImg.alt = "QR Code PIX";
+                // Texto qualquer para gerar QR Code (payload PIX, por exemplo)
+                const pixPayload = `PIX Gabriel R$${valor}`;
 
-    // Remove o "copia e cola" antigo se existir
-    const existingCopy = document.getElementById("pix-copy-code");
-    if (existingCopy) existingCopy.remove();
+                // URL da API para gerar QR Code da string pixPayload
+                const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(pixPayload)}`;
 
-    // Adiciona o "copia e cola" com o texto do payload
-    const copyPaste = document.createElement("p");
-    copyPaste.className = "mt-2 text-muted small";
-    copyPaste.id = "pix-copy-code";
-    copyPaste.innerHTML = `<strong>Copia e Cola:</strong> <br><code>${pixPayload}</code>`;
-    pixContainer.appendChild(copyPaste);
-}
+                // Exibe o QR Code gerado pela API externa
+                qrcodeImg.src = qrCodeUrl;
+                qrcodeImg.alt = "QR Code PIX";
 
-}
+                // Remove o "copia e cola" antigo se existir
+                const existingCopy = document.getElementById("pix-copy-code");
+                if (existingCopy) existingCopy.remove();
+
+                // Adiciona o "copia e cola" com o texto do payload
+                const copyPaste = document.createElement("p");
+                copyPaste.className = "mt-2 text-muted small";
+                copyPaste.id = "pix-copy-code";
+                copyPaste.innerHTML = `<strong>Copia e Cola:</strong> <br><code>${pixPayload}</code>`;
+                pixContainer.appendChild(copyPaste);
+            }
+
+        }
 
 
         if (e.target.value === "credito") {
