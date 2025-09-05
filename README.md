@@ -12,7 +12,8 @@ Cadastrar-se e autenticar-se
 
 Acompanhar seus pedidos
 
-💡 Justificativa
+💡 Justificativa:
+
 O comércio eletrônico é uma das áreas que mais cresce no mundo e representa uma habilidade essencial para desenvolvedores que buscam criar soluções escaláveis e completas. A construção deste e-commerce serve como prática para consolidar conhecimentos em:
 
 Desenvolvimento Front-end e Back-end
@@ -27,12 +28,14 @@ Design de interface e experiência do usuário
 
 Além disso, o projeto possibilita aplicar tecnologias modernas em um contexto real e de grande impacto.
 
-🧰 Tecnologias Utilizadas
+🧰 Tecnologias Utilizadas:
+
 Front-end: HTML5, CSS3, JavaScript (Bootstrap)
 
 Versionamento: Git + GitHub
 
-🧪 Protótipo (Wireframe)
+🧪 Protótipo (Wireframe):
+
 Protótipo inicial criado para planejar as telas principais do sistema:
 
 Página inicial (listagem de produtos)
@@ -47,7 +50,8 @@ Checkout
 
 📎 Link do Protótipo no Canva
 
-📅 Etapa Atual
+📅 Etapa Atual:
+
 Etapa 1 – Planejamento
 
 Repositório criado
@@ -56,7 +60,8 @@ README com escopo, justificativa e tecnologias
 
 Protótipo adicionado
 
-👥 Autores
+👥 Autores:
+
 Projeto desenvolvido por Benjamin Corte e Gabriel Bonada.
 
 
