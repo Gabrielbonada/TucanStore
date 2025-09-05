@@ -1,66 +1,67 @@
-🛍️ TucanStore E-commerce
+# 🛍️ TucanStore E-commerce
 
-📌 Escopo do Projeto
+## 📌 Escopo do Projeto
 
-Este projeto consiste no desenvolvimento de uma plataforma de e-commerce inspirada em grandes marketplaces como a Amazon. O sistema permitirá que os usuários possam:
+A **TucanStore** é uma plataforma de e-commerce inspirada em grandes marketplaces como a Amazon. O objetivo é permitir que usuários possam:
 
-Visualizar e pesquisar produtos
+- Visualizar e pesquisar produtos  
+- Adicionar itens ao carrinho  
+- Realizar compras  
+- Cadastrar-se e autenticar-se  
+- Acompanhar seus pedidos  
 
-Adicionar itens ao carrinho
+Este projeto serve como prática para consolidar conhecimentos em desenvolvimento web, arquitetura de sistemas e integração com APIs.
 
-Realizar compras
+---
 
-Cadastrar-se e autenticar-se
+## 💡 Justificativa
 
-Acompanhar seus pedidos
+O comércio eletrônico é uma das áreas que mais cresce no mundo. Criar uma solução como a TucanStore permite aplicar tecnologias modernas em um contexto real, desenvolvendo habilidades essenciais como:
 
-💡 Justificativa:
+- Desenvolvimento Front-end e Back-end  
+- Controle de versão com Git e GitHub  
+- Integração com APIs  
+- Design de interface e experiência do usuário  
 
-O comércio eletrônico é uma das áreas que mais cresce no mundo e representa uma habilidade essencial para desenvolvedores que buscam criar soluções escaláveis e completas. A construção deste e-commerce serve como prática para consolidar conhecimentos em:
+---
 
-Desenvolvimento Front-end e Back-end
+## 🧰 Tecnologias Utilizadas
 
-Arquitetura de sistemas
+- **Front-end**: HTML5, CSS3, JavaScript (Bootstrap)  
+- **Versionamento**: Git + GitHub  
 
-Controle de versão com Git e GitHub
+> ⚠️ Este projeto é focado em front-end. Funcionalidades de back-end podem ser adicionadas futuramente.
 
-Integração com APIs
+---
 
-Design de interface e experiência do usuário
-
-Além disso, o projeto possibilita aplicar tecnologias modernas em um contexto real e de grande impacto.
-
-🧰 Tecnologias Utilizadas:
-
-Front-end: HTML5, CSS3, JavaScript (Bootstrap)
-
-Versionamento: Git + GitHub
-
-🧪 Protótipo (Wireframe):
+## 🧪 Protótipo (Wireframe)
 
 Protótipo inicial criado para planejar as telas principais do sistema:
 
-Página inicial (listagem de produtos)
+- Página inicial (listagem de produtos)  
+- Página de detalhes do produto  
+- Carrinho de compras  
+- Login/Registro  
+- Checkout  
 
-Página de detalhes do produto
+📎 [Acesse o protótipo no Canva](https://www.canva.com/design/DAGwuIyf4oY/VcX6s2EVbrFHDGF5ES8bjw/edit?utm_content=DAGwuIyf4oY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
-Carrinho de compras
+✅ Funcionalidades Implementadas
+[x] Página inicial com produtos
 
-Login/Registro
+[x] Modal do carrinho
 
-Checkout
+[x] Formulário de contato com validação
 
-📎 Link do Protótipo no Canva
+[x] Carrossel de imagens
 
-📅 Etapa Atual:
+[x] Responsividade para dispositivos móveis
 
-Etapa 1 – Planejamento
+[x] API de localização (mapa)
 
-Repositório criado
+[x] Simulação de rastreio de entrega
 
-README com escopo, justificativa e tecnologias
-
-Protótipo adicionado
+---
 
 👥 Autores:
 
